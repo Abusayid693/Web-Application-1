@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="google-signin-client_id" content="246662172165-olfj3qm9ckcmd08e1mujokbuh2o9ht7u.apps.googleusercontent.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.79.0">
+  <title>Signin Template · Bootstrap v5.0</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+  <!-- google button script -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- fotawesome script -->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+  <style>
+    body {
+      height: 100%;
+
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: white;
+    }
+
+    .full-form {
+      text-align: center;
+      width: 400px;
+      height: 550px;
+      background-color: white;
+      /* position: relative; */
+      margin: 100px auto;
+      /* border-radius: 20px; */
+      box-shadow: -3px 4px 12px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .form-upper {
+      height: 18%;
+      background-color: #1089ff;
+      color: white;
+      /* border-top-right-radius: 20px; */
+      /* border-top-left-radius: 20px; */
+      /* position: absolute; */
+    }
+
+    .form-middle {
+      height: 64%;
+
+    }
+
+    .form-bottom {
+      height: 18%;
+      background-color: white;
+      /* border-bottom-right-radius: 20px; */
+      /* border-bottom-left-radius: 20px; */
+    }
+
+    .sign-up {
+      margin: 0;
+      padding: 30px;
+    }
+
+    .second-name {
+      background-color: white;
+      width: 320px;
+      height: 47px;
+
+      border-radius: 29px;
+      border: 0;
+      margin: 10px auto;
+
+    }
+
+    .first-name {
+      background-color: white;
+      width: 320px;
+      height: 47px;
+
+      border-radius: 29px;
+      border: 0;
+      margin: 10px auto;
+    }
+
+    .email-id {
+      background-color: white;
+      width: 320px;
+      height: 47px;
+
+      border-radius: 29px;
+      border: 0;
+      margin: 10px auto;
+    }
+
+    .g-signin2 {
+      display: inline-block;
+      margin: 0 0 20px 0;
+    }
+
+
+    .btn-primary {
+      width: 325px;
+      margin: 20px 0 30px 0;
+      background-color: #1089ff;
+      border-radius: 29px;
+    }
+
+    .btn-primary:hover {
+      background-color: white;
+      color: black;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+
+</head>
+
+<body class="myBody">
+  <div class="full-form">
+    <div class="form-upper">
+      <h3 class="sign-up">Sigh Up</h3>
+    </div>
+
+    <div class="form-middle">
+      <form class="" action="/subscribe" method="post">
+        <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal"></h1>
+
+        <input type="text" value="" name="firstname" class="form-control first-name" placeholder="Email address" required autofocus>
+
+        <input type="text" value="" name="secondname" class="form-control second-name" placeholder="Password" required>
+
+        <input type="email" value="" name="email" class="form-control email-id" placeholder="Email address" required autofocus>
+
+
+        <button class="w-100 btn btn-lg btn-primary" id="clickButton" type="submit">Sign in</button>
+      </form>
+
+
+      <!-- GOOGLE SIGN IN BUTTON -->
+
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <!-- GOOGLE SIGN IN BUTTON END -->
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+    </div>
+    <div class="form-bottom">
+
+    </div>
+  </div>
+
+  <script>
+    //TAKING USERS INFORMATION
+    function onSignIn(googleUser) {
+      // After a user successfully signs in, get the user's ID token
+      var id_token = googleUser.getAuthResponse().id_token;
+      // Then, send the ID token to your server with an HTTPS POST request
+      var profile = googleUser.getBasicProfile();
+      var name = profile.getName();
+      var id = profile.getEmail();
+      var img = profile.getId();
+      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+      console.log('Name: ' + profile.getName());
+      console.log('Image URL: ' + profile.getImageUrl());
+      console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      // document.querySelector(.first - name).setAttribute("value",name);
+      document.querySelector(".first-name").setAttribute("value", name);
+      document.querySelector(".second-name").setAttribute("value", img);
+      document.querySelector(".email-id").setAttribute("value", id);
+      //autoclick form button to send the data to server
+      var button = document.getElementById('clickButton');
+      button.form.submit();
+    }
+  </script>
+
+</body>
+
+</html>
