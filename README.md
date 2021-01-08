@@ -1,7 +1,7 @@
-# Responsive web Application
+# Responsive web Application includes google map API 
 
-### Responsive Dropdown Menu
-Beautiful and clean UI responsive navigation bar includes a beautiful drop-down side menu in the mobile version that contains a profile image, personal data, drop-down.
+### clean user interface
+Beautiful and clean UI responsive navigation bar,The project is still undergoing, it aims to build a responsive webapplication using map api, to provide user dtata about their destination including Flight prices,weather report, any recent political activities etc
 
 
 
