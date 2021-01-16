@@ -4,13 +4,13 @@
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
-    
+
     /*===== Colors =====*/
     --first-color: #5B65F5;
     --first-color-light: #C4C7F5;
     --dark-color: #0E1026;
     --white-color: #FBFBFB;
-    
+
     /*===== Font and typography =====*/
     --body-font: 'Open Sans', sans-serif;
     --nav-name-font-size: 1.5rem;
@@ -60,7 +60,7 @@ a{
     width: 100%;
     height: var(--header-height);
     padding: 0 1rem;
-    background-color: #FFF;
+
     z-index: var(--z-fixed);
     display: flex;
     justify-content: space-between;
@@ -98,7 +98,7 @@ a{
         display: flex;
         flex-direction: column;
     }
-    
+
     &__perfil{
         display: flex;
         flex-direction: column;
@@ -194,6 +194,7 @@ a{
 
         &__logo, &__toggle{
             display: none;
+          
         }
     }
 
@@ -250,7 +251,7 @@ a{
 
     .dropdown{
         position: relative;
-    
+
         &__menu{
             position: fixed;
             margin: 0;
@@ -271,5 +272,3 @@ a{
       margin-right: auto;
     }
   }
-
-

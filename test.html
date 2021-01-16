@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+</head>
+
+<body>
+  <!-- <h1 class="h1"></h1> -->
+  <h1 class="h2"></h1>
+  <h1 class="h3"></h1>
+  <form class="" action="index.html" method="post">
+    <input id="searchTxt" type="text" name="" value="">
+    <button type="button" class="btn1" name="button"></button>
+  </form>
+  <h1 class="h1"></h1>
+  <!-- <body> -->
+
+
+
+
+  <script type="text/javascript">
+    fetch('https://api.covid19api.com/summary')
+      .then(response => response.json())
+      .then(data => {
+
+        const mydata = data.Global.NewConfirmed;
+        document.querySelector(".h1").innerHTML = mydata;
+        console.log(data.Global.NewConfirmed)
+      })
+
+
+
+
+
+
+
+    document.querySelector(".btn1").addEventListener("click", function() {
+      fun1();
+    })
+    //api call function
+    function fun1() {
+      const a = document.getElementById("searchTxt").value;
+      console.log(a);
+      fetch('https://api.covid19india.org/raw_data19.json')
+        .then(response => response.json())
+        .then(data => {
+
+          const mystate = data.raw_data[a].detectedstate;
+          const mystatedata = data.raw_data[a].numcases;
+          document.querySelector(".h2").innerHTML = mystate;
+          document.querySelector(".h3").innerHTML = mystatedata;
+        })
+    }
+  </script>
+
+</body>
+
+</html>

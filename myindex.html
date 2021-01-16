@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -16,111 +21,46 @@
 </head>
 
 <body class="container-fluid">
+
+  <!-- this is for making the backgroud image fixed -->
+  <div class="top_image">
+
+
+  </div>
+
   <header class="header">
+    <!-- header image -->
     <a href="#" class="header__logo">Clay</a>
 
     <i class='bx bx-menu header__toggle' id="header-toggle"></i>
 
     <nav class="nav" id="nav-menu">
-      <div class="nav__content bd-grid">
+      <div class="nav__content bd-grid nav_no_effect left" id="delay">
         <a href="" class="nav__perfil">
           <div class="nav__img">
             <img src="img/img.png" alt="">
           </div>
 
           <div>
-            <span class="nav__name">Clay</span>
-            <span class="nav__name">Mitchell</span>
+            <span class="nav__name">Rehan</span>
+            <span class="nav__name">Choudhury</span>
           </div>
         </a>
 
-        <div class="nav__menu">
+        <div class="nav__menu " id="nav__menu">
           <ul class="nav__list">
             <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
 
-            <li class="nav__item dropdown">
-              <a href="#" class="nav__link dropdown__link">North India <i class='bx bx-chevron-down dropdown__icon'></i></a>
+            <li class="nav__item"><a href="http://localhost:3000/subscribe" class="nav__link">subscribe</a></li>
 
+            <li class="nav__item"><a href="http://localhost:3000/subscribe" class="nav__link">subscribe</a></li>
+            <li class="nav__item"><a href="http://localhost:3000/subscribe" class="nav__link">subscribe</a></li>
 
-              <ul class="dropdown__menu">
-                <li class="dropdown__item"><a href="#" class="nav__link"> Delhi</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Rajasthan</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Jammu & Kashmir</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Himachal Pradesh</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Uttar Pradesh</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link"> Punjab </a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Haryana </a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Uttrakhand</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Madhya Pradesh</a></li>
-                <li class="dropdown__item"><a href="#" class="nav__link">Chattisgarh</a></li>
+            <li class="nav__item"><a href="http://localhost:3000/subscribe" class="nav__link">subscribe</a></li>
 
-            </li>
-          </ul>
-          </li>
+            <li class="nav__item"><a href="http://localhost:3000/subscribe" class="nav__link">subscribe</a></li>
 
-
-
-
-
-
-          <li class="nav__item dropdown">
-            <a href="#" class="nav__link dropdown__link">South India <i class='bx bx-chevron-down dropdown__icon'></i></a>
-
-
-            <ul class="dropdown__menu">
-              <li class="dropdown__item"><a href="#" class="nav__link">Kerala</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Karnataka</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Tamil Nadu</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Andhra Pradesh</a></li>
-
-            </ul>
-          </li>
-          <li class="nav__item dropdown">
-            <a href="#" class="nav__link dropdown__link">East India<i class='bx bx-chevron-down dropdown__icon'></i></a>
-
-
-            <ul class="dropdown__menu">
-              <li class="dropdown__item"><a href="#" class="nav__link">Assam</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Manipur</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Meghalaya</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">West Bengal</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Orissa</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Sikkim</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Mizoram</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Tripura</a></li>
-            </ul>
-          </li>
-
-
-          <li class="nav__item dropdown">
-            <a href="#" class="nav__link dropdown__link">West India <i class='bx bx-chevron-down dropdown__icon'></i></a>
-
-
-            <ul class="dropdown__menu">
-              <li class="dropdown__item"><a href="#" class="nav__link">Goa</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Maharashtra</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Gujarat</a></li>
-
-            </ul>
-          </li>
-
-          <li class="nav__item dropdown">
-            <a href="#" class="nav__link dropdown__link">UTs <i class='bx bx-chevron-down dropdown__icon'></i></a>
-
-
-            <ul class="dropdown__menu">
-              <li class="dropdown__item"><a href="#" class="nav__link">Andaman & Nicobar</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Chandigarh</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Delhi / New Delhi</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Lakshadweep</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Pondicherry</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Dadar & Nagar Haveli</a></li>
-              <li class="dropdown__item"><a href="#" class="nav__link">Daman & Diu</a></li>
-
-            </ul>
-          </li>
-
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="http://localhost:3000/subscribe" class="nav__link">subscribe</a></li>
           </ul>
         </div>
       </div>
@@ -135,7 +75,7 @@
 
 
   <!-- BODY NAV LEFT SIDE -->
-  <div class="left-nav">
+  <div class="left-nav left-nav1">
     <ul>
       <li>Home
       </li>
@@ -172,61 +112,131 @@
   <!-- BODY NAV LEFT SIDE -->
 
 
+  <!-- </div> -->
+  <img id="spider" src="img/spider.png" alt="">
 
-  <div class="search-section">
+  <div class="top_form">
+    <img src="img/logo.png" alt="Stranger-things-logo">
+    <!-- <img id="spider" src="img/spider.png" alt=""> -->
+    <div class="button_section">
 
+      <span class="covid_btn" id="covid_btn"> <a href="#"><i class="fas fa-play "></i>SEASON 1</a> </span>
+      <span class="covid_btn" id="murder_btn"> <a href="#"><i class="fas fa-play "></i>SEASON 2</a> </span>
+      <span class="covid_btn" id="rape_btn"> <a href="#"><i class="fas fa-play "></i>SEASON 3</a> </span>
 
-    <div class="search">
-      <form class="" action="/mainBody" method="post">
-        <input type="text" class="search-bar" placeholder="search your city or state" name="" value="">
-        <button type="submit" name="button"><i class="fas icon fa-search fa-2x"></i></button>
-      </form>
     </div>
+    <div class="covid_form_details covid_transition" id="covid_form_details">
+
+    </div>
+    <div class="murder_form_details murder_transition" id="murder_form_details">
+
+    </div>
+    <div class="rape_form_details rape_transition" id="rape_form_details">
+
+    </div>
+    <img class="img-group" src="img/Stranger-Things.png" alt="">
   </div>
 
 
 
+
+
   <!-- MAIN BODY -->
-  <div class="main-body  ">
+  <div class="main-body ">
+    <div class="about">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt. Donec adipiscing tristique risus nec feugiat in fermentum posuere. Vivamus arcu
+        felis bibendum ut tristique. Etiam tempor orci eu lobortis. Ut venenatis tellus in metus vulputate. Mi tempus imperdiet nulla malesuada pellentesque. Semper viverra nam libero justo laoreet sit amet cursus. Eget felis eget nunc lobortis
+        mattis. Et ultrices neque ornare aenean euismod elementum. In cursus turpis massa tincidunt dui ut ornare. Sit amet nulla facilisi morbi.
 
-    <h4>biugbiu3hiNavbars come with built-in support for a handful of sub-components. Choose from the following as needed:
+        Tempus iaculis urna id volutpat lacus laoreet. Quis auctor elit sed vulputate mi sit amet. Morbi tristique senectus et netus et. Orci sagittis eu volutpat odio facilisis mauris sit. Libero nunc consequat interdum varius. Interdum velit
+        laoreet id donec ultrices tincidunt arcu non. Nec nam aliquam sem et tortor consequat id porta. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Ac ut consequat
+        semper viverra nam libero. Id diam vel quam elementum pulvinar etiam non quam lacus. Ante in nibh mauris cursus mattis. At imperdiet dui accumsan sit amet nulla. Ut venenatis tellus in metus vulputate. Volutpat odio facilisis mauris sit amet
+        massa vitae. Malesuada fames ac turpis egestas sed tempus urna et pharetra.
 
-      .navbar-brand for your company, product, or project name.
-      .navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
-      .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors.
-      Flex and spacing utilities for any form controls and actions.
-      .navbar-text for adding, product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns). .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and
-      spacing utilities for any form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. Here’s an example of all the
-      sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.uhi, product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
-      .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and spacing utilities for any form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for
-      grouping and hiding navbar contents by a parent breakpoint. Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.uhi vertically centered strings of
-      text.
-      .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.
-      Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) bre
-      , product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns). .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and spacing utilities for any
-      form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. Here’s an example of all the sub-components included in a
-      responsive light-themed nav
-      navbar-toggler for use with our collapse plugin and other navigation toggling behaviors.
-      Flex and spacing utilities for any form controls and actions.
-      .navbar-text for adding, product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns). .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and
-      spacing utilities for any form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. Here’s an example of all the
-      sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.uhi, product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
-      .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and spacing utilities for any form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for
-      grouping and hiding navbar contents by a parent breakpoint. Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.uhi vertically centered strings of
-      text.
-      <img src="img/map.png" class="imgmy" alt="">
+        Mauris in aliquam sem fringilla. Sed vulputate mi sit amet mauris commodo. Feugiat nibh sed pulvinar proin gravida hendrerit. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Dictum at tempor commodo ullamcorper a lacus
+        vestibulum. Cras ornare arcu dui vivamus arcu felis bibendum. Nulla posuere sollicitudin aliquam ultrices sagittis orci a. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Facilisi nullam vehicula ipsum a arcu. Ornare arcu
+        dui vivamus arcu felis. Enim eu turpis egestas pretium aenean pharetra. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Malesuada nunc vel risus commodo viverra. Et ligula ullamcorper malesuada proin libero nunc.
 
-      .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.
-      Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) bre
-      , produpacing utilities for any form controls and actions.
-      .navbar-text for adding, product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns). .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and
-      spacing utilities for any form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. Here’s an example of all the
-      sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.uhi, product, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
-      .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and spacing utilities for any form controls and actions. .navbar-text for adding vertically centered strings of text. .collapse.navbar-collapse for
-      grouping and hiding navbar cct, or project name. .navbar-nav for a full-height and lightweight navigation (including support for dropdowns). .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. Flex and
-      spacing utilities for any
-      form controls and actions. .navbar-text for adding verticallbar that automatically collapses at the lg (large) breakpoint.uhiakpoint.uhi
-    </h4>
+        Eu turpis egestas pretium aenean pharetra magna ac placerat. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Sem viverra aliquet eget sit amet tellus
+        cras. Aliquam ut porttitor leo a diam sollicitudin. Sed euismod nisi porta lorem mollis. Amet est placerat in egestas. Non enim praesent elementum facilisis leo vel fringilla est. Nunc id cursus metus aliquam. Vulputate enim nulla aliquet
+        porttitor. Posuere lorem ipsum dolor sit amet. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Eget lorem dolor sed viverra ipsum. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Sit amet dictum sit amet
+        justo. Nulla at volutpat diam ut. Morbi tincidunt ornare massa eget egestas purus.
+
+        Mollis nunc sed id semper risus in hendrerit gravida rutrum. Arcu bibendum at varius vel pharetra vel turpis nunc. Gravida dictum fusce ut placerat. Ac turpis egestas maecenas pharetra convallis posuere morbi. Lorem ipsum dolor sit amet
+        consectetur. Et netus et malesuada fames ac. Nec ultrices dui sapien eget mi proin sed libero. Vitae congue eu consequat ac felis donec. Morbi leo urna molestie at. Nisi lacus sed viverra tellus in hac habitasse platea. Pretium nibh ipsum
+        consequat nisl vel pretium lectus. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Bibendum est ultricies integer quis auctor elit sed. Et odio pellentesque diam volutpat commodo sed egestas egestas. Donec ac odio tempor
+        orci dapibus ultrices in iaculis nunc. Consequat id porta nibh venenatis cras. Id semper risus in hendrerit gravida rutrum quisque. Eget arcu dictum varius duis at consectetur. Fames ac turpis egestas maecenas pharetra convallis posuere morbi
+        leo. Aliquet eget sit amet tellus.
+
+        Viverra aliquet eget sit amet. Imperdiet proin fermentum leo vel orci porta. Cum sociis natoque penatibus et. Lacus laoreet non curabitur gravida arcu ac tortor. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus.
+        Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Scelerisque purus semper eget duis at
+        tellus. Adipiscing elit duis tristique sollicitudin nibh. Ultrices sagittis orci a scelerisque purus semper. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet.
+        Egestas pretium aenean pharetra magna. Tortor aliquam nulla facilisi cras.
+
+        Proin fermentum leo vel orci porta non pulvinar. Amet purus gravida quis blandit turpis cursus. Interdum posuere lorem ipsum dolor. Donec adipiscing tristique risus nec feugiat in. Convallis posuere morbi leo urna molestie at elementum eu
+        facilisis. In nibh mauris cursus mattis molestie. Nibh tellus molestie nunc non blandit massa enim. Cursus metus aliquam eleifend mi. Facilisi morbi tempus iaculis urna id volutpat lacus. Adipiscing tristique risus nec feugiat in fermentum
+        posuere urna. Non arcu risus quis varius quam quisque. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Sit amet cursus sit amet. Quisque non tellus orci ac auctor augue mauris augue. Id leo in vitae turpis massa sed.
+
+        Neque gravida in fermentum et sollicitudin ac. Sagittis id consectetur purus ut faucibus pulvinar elementum. Egestas integer eget aliquet nibh praesent. Enim sed faucibus turpis in eu mi bibendum neque egestas. Consectetur adipiscing elit
+        duis tristique sollicitudin nibh. Posuere morbi leo urna molestie. Id cursus metus aliquam eleifend mi. Penatibus et magnis dis parturient. Ultricies integer quis auctor elit sed vulputate mi sit. Bibendum at varius vel pharetra vel turpis
+        nunc eget. Eget arcu dictum varius duis at consectetur lorem donec. Orci ac auctor augue mauris augue neque. Id donec ultrices tincidunt arcu non sodales neque sodales. Quam pellentesque nec nam aliquam sem et tortor consequat. Sed enim ut
+        sem viverra aliquet eget sit amet tellus. Posuere lorem ipsum dolor sit. Nunc eget lorem dolor sed viverra ipsum. Maecenas pharetra convallis posuere morbi leo. Sagittis nisl rhoncus mattis rhoncus urna neque.
+
+        Pretium nibh ipsum consequat nisl vel. Aliquet enim tortor at auctor urna nunc id cursus. Id ornare arcu odio ut sem nulla pharetra diam sit. Amet luctus venenatis lectus magna fringilla. Non nisi est sit amet facilisis magna. Quam
+        pellentesque nec nam aliquam sem et. Dolor purus non enim praesent. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Sed id semper risus in hendrerit. Gravida quis blandit turpis cursus in hac. Vitae auctor eu augue ut lectus
+        arcu bibendum.
+
+        Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Feugiat sed lectus vestibulum mattis. Turpis nunc eget lorem dolor sed viverra ipsum nunc. Amet
+        facilisis magna etiam tempor. Erat imperdiet sed euismod nisi porta lorem mollis. Donec pretium vulputate sapien nec sagittis. Sapien pellentesque habitant morbi tristique senectus et netus. Euismod in pellentesque massa placerat duis. Ut
+        ornare lectus sit amet est placerat in egestas erat. Aliquet eget sit amet tellus cras. Cursus risus at ultrices mi. Ut venenatis tellus in metus vulputate eu. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Non tellus orci ac
+        auctor augue mauris augue neque.
+
+        In hac habitasse platea dictumst. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Aliquet enim tortor at auctor urna nunc. At imperdiet dui accumsan sit amet nulla. Convallis tellus id interdum velit laoreet. Morbi leo urna
+        molestie at. A condimentum vitae sapien pellentesque habitant morbi tristique. Magnis dis parturient montes nascetur. Et tortor at risus viverra adipiscing at in tellus. Risus nec feugiat in fermentum posuere urna nec tincidunt. Enim nec dui
+        nunc mattis enim ut tellus elementum sagittis. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Eget felis eget nunc lobortis mattis aliquam faucibus. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo.
+
+        Nibh tortor id aliquet lectus. Imperdiet dui accumsan sit amet nulla facilisi morbi. Bibendum at varius vel pharetra vel turpis nunc eget. Blandit libero volutpat sed cras ornare arcu. Vestibulum lectus mauris ultrices eros. Purus non enim
+        praesent elementum. Scelerisque mauris pellentesque pulvinar pellentesque habitant. Sapien pellentesque habitant morbi tristique. Nunc scelerisque viverra mauris in aliquam. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
+        Auctor urna nunc id cursus metus aliquam. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Eget nullam non nisi est sit. Morbi tristique senectus et netus et malesuada. Viverra adipiscing at in tellus integer feugiat scelerisque.
+
+        Aliquam sem et tortor consequat. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Nam at lectus urna duis. Curabitur vitae nunc sed velit
+        dignissim sodales ut eu. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Sit amet nulla facilisi morbi tempus iaculis urna id. In aliquam sem fringilla ut. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Venenatis
+        urna cursus eget nunc.
+
+        Vitae tempus quam pellentesque nec. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Aliquam id
+        diam maecenas ultricies mi eget mauris pharetra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Massa vitae tortor condimentum lacinia quis vel eros donec ac. Nibh sed pulvinar proin gravida. Sit amet mauris commodo quis.
+        Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
+
+        Egestas pretium aenean pharetra magna ac placerat. Diam quis enim lobortis scelerisque fermentum. Nam at lectus urna duis convallis convallis tellus id interdum. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Neque ornare aenean
+        euismod elementum nisi quis eleifend. Pulvinar proin gravida hendrerit lectus a. Blandit cursus risus at ultrices mi tempus imperdiet. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Condimentum id venenatis a
+        condimentum vitae sapien pellentesque. Amet consectetur adipiscing elit ut. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Fermentum posuere urna nec tincidunt praesent semper feugiat. Turpis in eu mi bibendum neque
+        egestas congue quisque egestas. Eu scelerisque felis imperdiet proin fermentum. Mi proin sed libero enim.
+
+        Elementum facilisis leo vel fringilla. Consectetur adipiscing elit ut aliquam purus. Magna fermentum iaculis eu non diam phasellus. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Commodo elit at imperdiet dui accumsan. Magna
+        eget est lorem ipsum. Molestie ac feugiat sed lectus vestibulum mattis. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id. Diam volutpat commodo sed egestas egestas fringilla phasellus. Tempor nec feugiat nisl pretium. Pretium
+        quam vulputate dignissim suspendisse in est. Vel orci porta non pulvinar neque laoreet suspendisse. Ultrices neque ornare aenean euismod elementum. Turpis egestas integer eget aliquet. Cras adipiscing enim eu turpis egestas. Ornare massa eget
+        egestas purus viverra accumsan. Augue neque gravida in fermentum et sollicitudin. Lorem ipsum dolor sit amet consectetur adipiscing elit.
+
+        Mauris rhoncus aenean vel elit scelerisque mauris. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Luctus accumsan tortor posuere ac ut consequat semper. Enim ut sem viverra aliquet eget. Ipsum nunc aliquet bibendum
+        enim facilisis gravida. Faucibus et molestie ac feugiat sed lectus vestibulum. Pharetra massa massa ultricies mi. Et malesuada fames ac turpis egestas integer eget aliquet nibh. Dui vivamus arcu felis bibendum ut tristique et egestas quis.
+        Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Felis imperdiet proin fermentum leo vel orci porta. Tristique sollicitudin nibh sit amet. Ut consequat semper viverra nam libero justo laoreet sit amet. Scelerisque varius morbi
+        enim nunc faucibus a pellentesque sit. Amet nisl purus in mollis. Id leo in vitae turpis. Semper viverra nam libero justo laoreet sit. Scelerisque varius morbi enim nunc. Posuere lorem ipsum dolor sit amet consectetur. A lacus vestibulum sed
+        arcu non odio.
+
+        Velit aliquet sagittis id consectetur purus ut. Non arcu risus quis varius quam quisque id. Consectetur a erat nam at lectus urna duis convallis convallis. Mattis aliquam faucibus purus in massa tempor nec feugiat. Accumsan lacus vel
+        facilisis volutpat est velit egestas. Nam aliquam sem et tortor. Molestie nunc non blandit massa. Mi eget mauris pharetra et ultrices neque ornare. Bibendum neque egestas congue quisque egestas diam in. Scelerisque eu ultrices vitae auctor eu
+        augue ut lectus arcu. Eget egestas purus viverra accumsan in. Commodo elit at imperdiet dui. Duis convallis convallis tellus id interdum.
+
+        Enim facilisis gravida neque convallis a cras. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Ultricies integer quis auctor elit sed vulputate mi. Dui vivamus arcu felis bibendum ut tristique. At imperdiet dui accumsan sit
+        amet nulla facilisi. Tincidunt dui ut ornare lectus sit amet. Nisi porta lorem mollis aliquam ut porttitor leo a. Ipsum a arcu cursus vitae congue mauris rhoncus. Viverra nam libero justo laoreet sit amet cursus sit amet. Parturient montes
+        nascetur ridiculus mus mauris vitae ultricies leo. Est ante in nibh mauris. Eget nunc scelerisque viverra mauris in aliquam sem. Aliquam ultrices sagittis orci a scelerisque purus. Dui sapien eget mi proin. Et netus et malesuada fames ac
+        turpis egestas maecenas pharetra. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est.
+
+        Vitae suscipit tellus mauris a diam. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Consequat nisl
+        vel pretium lectus quam id. Cras adipiscing enim eu turpis egestas. Nisl purus in mollis nunc sed id. Amet nisl purus in mollis nunc sed id. Id leo in vitae turpis massa. Quisque non tellus orci ac auctor augue mauris. Turpis nunc eget lorem
+        dolor. Neque egestas congue quisque egestas diam in arcu cursus. Bibendum ut tristique et egestas quis. Consequat id porta nibh venenatis. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Diam sit amet nisl suscipit
+        adipiscing bibendum est ultricies.</p>
+    </div>
   </div>
 
   <!-- Ad section -->
@@ -256,74 +266,212 @@
 
     }
 
+
+    .bx-menu {
+      background-color: black;
+      color: red;
+    }
+
+    .imgt {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+
     .imgmy {
       width: 100%;
       display: block;
     }
 
 
-    /* SEARCH BAR */
-    .search-section {
-      /* background-image: url(img/map.png);
-       */
-      background-image: url(img/map-day.png);
-      margin-left: 200px;
+    /* top BAR */
+
+    #spider {
+      position: absolute;
+      z-index: 0;
+      left: 200px;
+      top: 10px;
+      width: 50%;
+
+
     }
 
-    .search {
-      display: inline-block;
+    .top_image {
+
+
+      background-image: url(img/Wallpaper2.jpg);
+      height: 900px;
+      margin: 0;
+      z-index: -5;
+      position: fixed;
+      width: 100%;
+
+      /* opacity: 0.9; */
+    }
+
+    .img-group {
+      position: absolute;
+      top: 780px;
+      right: 400px;
+
+    }
+
+    .top_form {
       text-align: center;
 
-      width: 42.65rem;
-      height: 4.38rem;
-      margin: 170px auto 150px 280px;
-      background-color: white;
-      padding: 0 0 0 0;
-      border: 1.5px solid #e8e8e8;
+      margin: 0px 0 0 0px;
+      width: 100%;
+      height: 950px;
+      padding-top: 200px;
+
+      background: rgba(0, 0, 0, 0.5);
+      position: relative;
 
     }
 
-    textarea:focus,
-    input:focus {
-      outline: none;
-    }
-
-    .search button {
-      border: none;
-      background-color: white;
+    .top_form img {
+      margin-top: -120px;
+      width: 40%;
 
     }
 
-    .icon {
-      color: rgb(95, 99, 109);
-      margin-top: 13px;
+    .covid_btn {
 
-    }
-
-    .search-bar {
-      -webkit-box-direction: normal;
-      -webkit-font-smoothing: antialiased;
-      box-sizing: border-box;
-      color: rgb(95, 99, 104);
+      padding: 10px 12px;
+      background-color: #a80038;
       display: inline-block;
-      /* border: 1px solid #9ba4b4; */
-      font-weight: bold;
-      font-size: 1.7rem;
-      height: 50px;
-      line-height: 21px;
-      width: 598px;
-      margin: 0 auto;
-      border: none;
+      transition: 0.5s;
+      margin: 10px 69px;
+      border: 1px solid #a80038;
+      font-size: 20px;
+
     }
 
-    ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
+    .covid_btn a {
+      text-decoration: none;
+    }
 
-      color: #898b8a;
+    .fa-play {
+      width: 28px;
+
+      margin-right: 8px;
+    }
+
+    .covid_btn:hover {
+
+      transition: 0.5s;
+      opacity: 0.8;
+
+
+    }
+
+    .covid_btn a {
+
+      color: white;
+    }
+
+    .covid_btn a:hover {}
+
+    .covid_form_details {
+
+      opacity: 0;
+    }
+
+    #covid_form_details {
+
+      margin-top: 2.5rem;
+    }
+
+    .covid_form_details_visible {
+
+      display: inline-block;
+      background-color: black;
+      width: 50%;
+      height: 50%;
+      padding: 20px;
+      opacity: 0.8;
+
+    }
+
+    .covid_transition {
+      transition: 0.8s;
+    }
+
+    .rape_transition {
+      transition: 0.8s;
+    }
+
+
+    .rape_form_details {
+
+      opacity: 0;
+    }
+
+    .rape_form_details_visible {
+
+      display: inline-block;
+      background-color: black;
+      width: 50%;
+      height: 50%;
+      padding: 20px;
       opacity: 1;
-      /* Firefox */
     }
 
+
+    .murder_form_details {
+
+      opacity: 0;
+    }
+
+
+    .murder_transition {
+      transition: 0.8s;
+    }
+
+
+    .murder_form_details_visible {
+
+      display: inline-block;
+      background-color: black;
+      width: 50%;
+      height: 50%;
+      padding: 20px;
+      opacity: 1;
+
+
+    }
+
+    /* top form end */
+
+    /* top nav */
+    .nav__link {
+
+      height: 30px;
+      margin: 0px 1px;
+      transition: 0.2s all;
+      position: static;
+      padding: 10px 20px;
+      color: white;
+
+    }
+
+    .nav__item {
+      margin-right: 0;
+    }
+
+    .nav__link:hover {
+      padding: 25px 20px 27px 20px;
+      height: 90px;
+      background-color: rgba(255, 0, 0, 0.4);
+
+      transition: 0.3s ease-in;
+
+    }
+
+    .nav__perfil {
+      margin-left: 0;
+      margin-right: 300px;
+    }
 
     /* LEFT NAV */
 
@@ -347,22 +495,34 @@
       height: 800px;
       background-color: white;
       position: fixed;
-      margin: 70px 0 0 0;
+      margin: 25px 0 0 0;
       text-align: center;
       transition: all 1s;
-
+      font-family: 'Montserrat', sans-serif;
+      opacity: 0;
+      left: -6%;
+      overflow-y: scroll;
+      overflow-x: hidden;
     }
+
+
 
     .left-nav ul li {
       border: none;
       text-decoration: none;
       display: block;
       background-color: white;
-      width: 70%;
+      width: 76%;
       height: 2.5rem;
       margin: 8px auto 5px auto;
       padding: 6px;
       transition: 0.2s ease-in;
+      color: black;
+    }
+
+    .left-nav:hover {
+      opacity: 1;
+      left: 0;
     }
 
     .left-nav ul li:hover {
@@ -370,35 +530,50 @@
       transition: 0.5s;
       box-shadow: -7px 5px 12px rgba(0, 0, 0, 0.1);
       background-color: #3c4858;
-      color: #ffffff;
+      color: white;
       width: 100%;
+      opacity: 1;
     }
 
     /* LEFT NAV END */
 
     /* main body */
     .main-body {
-      margin: 0 0 0 200px;
-      /* padding: 15px; */
-      background-color: white;
-      display: inline-block;
-      padding-top: 200px;
+      margin: 0 0 0 0;
+      width: 100%;
+      height: 800px;
+      background-color: black;
+
+      padding: 120px 0px 60px 0;
+
+      text-align: center;
+      background-color: black;
     }
 
     .container-fluid {
       padding: 0;
+      margin: 0;
     }
 
-
-
-
+    .about {
+      width: 40%;
+      height: 30rem;
+      background-color: white;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background-color: black;
+      color: white;
+      margin-left: 12%;
+      font-size: 2rem;
+      text-align: left;
+    }
 
     /* FOOTER SECTION */
 
     .footer {
       height: 900px;
       background-color: black;
-      margin-top: 50px;
+      /* margin-top: 50px; */
     }
 
     /* REMOVING THE LEFT NAV */
@@ -409,31 +584,59 @@
         padding: 0;
       }
 
-      .search {
-        margin-left: 30px;
-        margin-right: 0;
-        width: 500px;
-        /* width: 100px; */
+
+      /* top form */
+      .button_section {
+        margin: 40px 0 0 150px;
+
       }
 
-      .search-bar {
-        width: 300px;
+      .img-group {
+        left: 12%;
+        top: 30%;
+        opacity: 0.9;
       }
 
-      .search-section {
-        margin: 0;
+      .top_form img {
+        width: 80%;
+      }
 
+      .covid_btn {
+        padding: 8px 10px;
+        display: table;
+        transition: 0.5s;
+        margin: 15px 0;
+      }
+
+      .button_section {
+        padding-top: 100px;
+      }
+
+      /* Delay effect in nav */
+      .nav_no_effect {
+        opacity: 0;
+        transition: 0;
+      }
+
+
+      #delay {
+        position: fixed;
+      }
+
+
+      .nav__menu_effect {
+
+        opacity: 1;
+        transition: 2.7s;
       }
 
       /* changing the color of dropdown menu it was a bug */
       .dropdown:hover>.dropdown__menu {
-        background-color: blue;
-
+        background-color: white;
+        text-decoration: none;
       }
 
-      .main-body {
-        margin: 20px 30px 0 30px;
-      }
+
 
       .hr-left-nav {
         display: none;
@@ -451,6 +654,55 @@
 
 
   <script type="text/javascript">
+    // Top form script
+    covidCases();
+    murderCases();
+    rapeCases();
+    delay();
+
+    function covidCases() {
+      document.querySelector("#covid_btn").addEventListener("click", function() {
+        document.querySelector("#murder_form_details").setAttribute("class", "murder_form_details");
+        document.querySelector("#rape_form_details").setAttribute("class", "rape_form_details");
+        document.querySelector("#covid_form_details").setAttribute("class", "covid_form_details_visible covid_transition");
+
+
+
+      })
+    }
+
+    function murderCases() {
+      document.querySelector("#murder_btn").addEventListener("click", function() {
+
+        document.querySelector("#covid_form_details").setAttribute("class", "covid_form_details");
+        document.querySelector("#rape_form_details").setAttribute("class", "rape_form_details");
+        document.querySelector("#murder_form_details").setAttribute("class", "murder_form_details_visible murder_transition");
+      })
+    }
+
+    function rapeCases() {
+      document.querySelector("#rape_btn").addEventListener("click", function() {
+
+        document.querySelector("#covid_form_details").setAttribute("class", "covid_form_details");
+        document.querySelector("#murder_form_details").setAttribute("class", "murder_form_details");
+        document.querySelector("#rape_form_details").setAttribute("class", "rape_form_details_visible rape_transition");
+      })
+    }
+    //top form script end
+
+    function delay() {
+      document.querySelector("#header-toggle").addEventListener("click", function() {
+
+
+        document.querySelector("#delay").classList.toggle("nav_no_effec");
+
+        document.querySelector("#delay").classList.toggle("nav__menu_effect");
+      })
+
+
+    }
+
+
     var a = document.querySelector(".left-nav");
     var myScrollFunc = function() {
       var y = window.scrollY;

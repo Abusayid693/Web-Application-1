@@ -47,9 +47,7 @@
       height: 18%;
       background-color: #1089ff;
       color: white;
-      /* border-top-right-radius: 20px; */
-      /* border-top-left-radius: 20px; */
-      /* position: absolute; */
+
     }
 
     .form-middle {
@@ -60,8 +58,7 @@
     .form-bottom {
       height: 18%;
       background-color: white;
-      /* border-bottom-right-radius: 20px; */
-      /* border-bottom-left-radius: 20px; */
+
     }
 
     .sign-up {
@@ -185,6 +182,15 @@
       //autoclick form button to send the data to server
       var button = document.getElementById('clickButton');
       button.form.submit();
+
+      signOut();
+      //sign out function
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function() {
+          console.log('User signed out.');
+        });
+      }
     }
   </script>
 

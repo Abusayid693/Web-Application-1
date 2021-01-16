@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 3rem;
+  --header-height: 3.8rem;
   /*===== Colors =====*/
   --first-color: #5B65F5;
   --first-color-light: #C4C7F5;
@@ -60,8 +60,7 @@ a {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  padding: 0 1rem;
-  background-color: #FFF;
+  padding: 0 0;
   z-index: var(--z-fixed);
   display: flex;
   justify-content: space-between;
@@ -70,12 +69,13 @@ a {
 }
 
 .header__logo {
-  color: var(--dark-color);
+  color: white;
 }
 
 .header__toggle {
   font-size: 1.7rem;
   cursor: pointer;
+  background-color: black;
 }
 
 /*===== NAV =====*/
@@ -84,7 +84,7 @@ a {
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: blue;
+    background-color: black;
     width: 80%;
     height: 100vh;
     padding: 2rem 0;
@@ -109,7 +109,7 @@ a {
 
 .nav__img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -124,7 +124,7 @@ a {
 .nav__name {
   display: block;
   font-size: var(--nav-name-font-size);
-  color: var(--white-color);
+  color: black;
 }
 
 .nav__item {
@@ -132,11 +132,12 @@ a {
 }
 
 .nav__link {
-  color: var(--first-color-light);
+  color: white;
 }
 
 .nav__link:hover {
-  color: var(--white-color);
+  text-decoration: none;
+  color: white;
 }
 
 /*Show menu*/
@@ -218,7 +219,7 @@ a {
   .nav__img {
     width: 40px;
     height: 40px;
-    margin-right: .5rem;
+    margin-right: 0;
     margin-bottom: 0;
   }
 
@@ -241,14 +242,9 @@ a {
   }
 
   .nav__link {
-    color: var(--dark-color);
+    color: white;
   }
 
-  .nav__link:hover {
-    color: var(--first-color);
-  }
-
-  /*Active link new color*/
   .active {
     color: var(--first-color);
   }
