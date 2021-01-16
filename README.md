@@ -1,7 +1,6 @@
-# Responsive Dropdown Menu
-## [Watch it on youtube](https://youtu.be/_cUM13VUw8U)
-### Responsive Dropdown Menu
-Beautiful and clean responsive navigation bar includes a beautiful drop-down side menu in the mobile version that contains a profile image, personal data, drop-down links, and in the desktop version a sticky header with all the above elements.
+# Responsive web Application includes google map API 
 
-Don't forget to join the channel for more videos like this.
-[Bedimcode](https://www.youtube.com/c/Bedimcode)
+### clean user interface
+Beautiful and clean UI responsive navigation bar,The project is still undergoing, it aims to build a responsive webapplication using map api, to provide user data about their destination including Flight prices,weather report, any recent political activities etc.
+It also includes some very powerful features such as night mode,comparing the different prices etc
+
